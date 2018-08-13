@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="29dp"
+            android:text="Name :" />
+
+        <TextView
+            android:id="@+id/Name_Meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_marginStart="20dp"
+            android:textSize="16dp"
+
+            android:layout_toEndOf="@+id/textView12"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_alignTop="@+id/Name_Meeting"
+            android:layout_marginEnd="97dp"
+            android:text="Date :" />
+
+        <TextView
+            android:id="@+id/Date_Meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="16dp"
+
+            android:layout_alignTop="@+id/textView15"
+            android:layout_marginEnd="25dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="6dp"
+            android:text="ID :"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/meetingID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView23"
+            android:layout_marginStart="7dp"
+            android:layout_toEndOf="@+id/textView23"
+            android:text="TextView" />
+
+    </RelativeLayout>
+</LinearLayout>

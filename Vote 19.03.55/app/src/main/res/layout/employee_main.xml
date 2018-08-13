@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+
+    android:weightSum="1"
+    tools:context="com.example.waqasur_rehman.vote.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.66"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="14dp">
+
+        <Button
+            android:id="@+id/vote"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_button"
+            android:drawableTop="@mipmap/vote"
+            android:onClick="onvote"
+            android:paddingTop="50dp"
+            android:text="Vote" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/info"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_button"
+            android:drawableTop="@mipmap/setting"
+            android:onClick="View_setting"
+            android:paddingTop="50dp"
+            android:text="Manage     Account" />
+
+        <Button
+            android:id="@+id/schedules_employee"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_alignStart="@+id/setting"
+            android:layout_alignTop="@+id/vote"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_button"
+            android:drawableTop="@mipmap/schedule"
+            android:onClick="openPlanner"
+            android:paddingTop="50dp"
+            android:text="Schedules Meeting" />
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_alignStart="@+id/vote"
+            android:layout_below="@+id/vote"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/round_button"
+            android:drawableTop="@mipmap/help"
+            android:onClick="openInfo"
+            android:paddingTop="50dp"
+            android:text="Info" />
+
+        <Button
+            android:id="@+id/qr_generation"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_button"
+            android:drawableTop="@mipmap/qr"
+            android:onClick="OpenQRGenerator"
+            android:paddingTop="50dp"
+            android:text="QR Scanner"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/setting"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/vote"
+            android:layout_alignTop="@+id/vote"
+            app:srcCompat="@mipmap/upload" />
+
+        <Button
+            android:id="@+id/logout_employee"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/round_button"
+            android:onClick="OnLogoutEmployee"
+            android:text="Logout" />
+
+    </RelativeLayout>
+
+</LinearLayout>

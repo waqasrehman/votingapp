@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Name : "
+            android:id="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/NameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView22"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/textView22"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/NameID"
+            android:layout_marginStart="56dp"
+            android:layout_toEndOf="@+id/NameID"
+            android:text="Email :" />
+
+        <TextView
+            android:id="@+id/EmailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView24"
+            android:layout_toEndOf="@+id/textView24"
+            android:text="TextView" />
+    </RelativeLayout>
+</LinearLayout>

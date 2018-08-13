@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/mylogo" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Date_"
+            style="@android:style/Widget.Holo.TextView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="29dp" />
+
+        <Button
+            android:id="@+id/Date_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Select Date"
+            android:layout_marginStart="30dp"
+            android:layout_alignBaseline="@+id/Date_"
+            android:layout_alignBottom="@+id/Date_"
+            android:layout_toEndOf="@+id/Date_" />
+
+        <TextView
+            android:id="@+id/Time_"
+            style="@android:style/Widget.Holo.TextView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Date_"
+            android:layout_below="@+id/Date_button"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/time_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Select Time"
+            android:layout_alignTop="@+id/Time_"
+            android:layout_alignStart="@+id/Date_button" />
+
+        <EditText
+            android:id="@+id/Name_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/time_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+        <EditText
+            android:id="@+id/Desc_"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/Name_"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Description"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/create_"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Desc_"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_button"
+            android:text="Create" />
+
+        <Button
+            android:id="@+id/viewschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:text="View Schedules" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.waqasur_rehman.vote">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="MainActivity" />
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".Register" >
+        </activity>
+        <activity android:name=".Employee_main"
+            android:label="Employee Portal">
+        </activity>
+
+        <activity android:name=".Vote"
+            android:label="Vote">
+        </activity>
+        <activity android:name=".Result_Detail"
+            android:label="Result Detail">
+        </activity>
+        <activity android:name=".QR_Survey"
+            android:label="QR Survey">
+        </activity>
+        <activity android:name=".Info"
+            android:label="Info">
+        </activity>
+        <activity android:name=".Schedule_Planner"
+            android:label="Schedule Planner">
+        </activity>
+        <activity android:name=".Result"
+            android:label="Survey Portal">
+        </activity>
+
+        <activity android:name=".Upload"
+            android:label="Upload Survey">
+        </activity>
+
+        <activity android:name=".Schedular"
+            android:label="Meeting Scheduler">
+        </activity>
+
+        <activity android:name=".QR_reader"
+            android:label="QR Reader">
+        </activity>
+        <activity android:name=".Setting"
+            android:label="Setting">
+        </activity>
+        <activity android:name=".Cast"
+            android:label="Cast Vote">
+        </activity>
+
+        <activity android:name=".Report"
+            android:label="Report">
+        </activity>
+
+        <activity android:name=".Email"
+            android:label="Email Portal">
+        </activity>
+        <activity android:name=".QRGenerator"
+            android:label="QR Code">
+        </activity>
+        <activity android:name=".schedule_detail"
+            android:label="Schedule Detail">
+        </activity>
+        <activity android:name=".Attending"
+            android:label=" Attending Meeting">
+        </activity>
+        <activity android:name=".Message"
+            android:label=" Message">
+        </activity>
+        <activity android:name=".Detail"
+            android:label=" Detail about schedule ">
+        </activity>
+
+
+
+    </application>
+
+</manifest>
